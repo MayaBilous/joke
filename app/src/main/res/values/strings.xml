@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">joke</string>
+    <string name="joke">joke</string>
+    <string name="liked_jokes">liked jokes</string>
+    <string name="exit">Exit</string>
+    <string name="didn_t_like">Didn\'t like</string>
+    <string name="liked">Liked</string>
+    <string name="list_liked_jokes">List Liked Jokes</string>
+</resources>
