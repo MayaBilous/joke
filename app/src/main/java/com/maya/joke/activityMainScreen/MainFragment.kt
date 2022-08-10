@@ -26,6 +26,10 @@ class MainFragment : Fragment(R.layout.fragment_mainscreen){
             AppDatabase::class.java, "database-name"
         ).build()
 
+        viewModel.jokes.observe(this){ jokes->
+            binding.joke.text = viewModel.jokeText()
+
+        }
         binding.exit.setOnClickListener { requireActivity().finish() }
 
         binding.listLikedJokes.setOnClickListener {
@@ -44,5 +48,6 @@ class MainFragment : Fragment(R.layout.fragment_mainscreen){
             viewModel.addItem(it, binding.joke.text.toString())
         }
         }
+
     }
 }
